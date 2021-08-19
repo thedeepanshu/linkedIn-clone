@@ -1,0 +1,38 @@
+.inputOption {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  color: gray;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.inputOption:hover {
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+.inputOption > h4 {
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .inputOption > .icon {
+    font-size: 14px;
+  }
+  .inputOption > h4 {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .inputOption > h4 {
+    display: none;
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .inputOption > .icon {
+    font-size: 15px;
+  }
+}
